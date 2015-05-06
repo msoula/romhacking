@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cpu_memory>
+	<slot bank_number="07" starting_offset="E010" ending_offset="1000F" />
+    <slot bank_number="06" starting_offset="C010" ending_offset="E00F" />
+	<slot bank_number="0E" starting_offset="1C010" ending_offset="1E00F" />
+	<slot bank_number="0F" starting_offset="1E010" ending_offset="2000F" />
+</cpu_memory>

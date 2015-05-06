@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://terminus.romhack.net/XmlScriptEditor_config"
+	xmlns:xse_c="http://terminus.romhack.net/XmlScriptEditor_config"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+
+	<xs:complexType name="OpcodeType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="value" type="xs:nonNegativeInteger" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="OpcodesType">
+		<xs:sequence>
+			<xs:element name="opcode" type="xse_c:OpcodeType" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ConfigType">
+		<xs:sequence>
+			<xs:element name="opcodes" type="xse_c:OpcodesType" />
+		</xs:sequence>
+		<xs:attribute name="maximumLineSize" type="xs:positiveInteger" />
+	</xs:complexType>
+
+	<xs:element name="config" type="xse_c:ConfigType" />
+</xs:schema>

@@ -1,0 +1,6 @@
+<!DOCTYPE RCC><RCC version="1.0">
+ <qresource>
+     <file alias="XML_SCRIPT_SCHEMA">xsd/dump_schema.xsd</file>
+     <file alias="XML_CONFIG_SCHEMA">xsd/config_schema.xsd</file>
+ </qresource>
+ </RCC>
